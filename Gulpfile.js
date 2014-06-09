@@ -22,7 +22,7 @@ gulp.task('css', function () {
     gulp
         .src(SRC_BASE + '/stylus/screen.styl')
         .pipe(stylus())
-        // .pipe(minifyCSS())
+        .pipe(minifyCSS())
         .pipe(gulp.dest(BUILD_BASE + 'css/'));
 });
 
