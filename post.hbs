@@ -1,0 +1,42 @@
+{{!< default}}
+
+
+<div class="content">
+
+    <article class="{{post_class}} one-post">
+
+        {{! Everything inside the #post tags pulls data from the post }}
+        {{#post}}
+
+            <div class="post-header clearfix">
+                <h1 class="post-title">{{{title}}}</h1>
+                <div class="post-meta">
+                    <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='YYYY-MM-DD'}}</time>
+                    <span class="icon-tag">&#xe600;</span>
+                    {{#foreach tags}}
+                        <a href="{{url}}">{{name}}</a>
+                    {{/foreach}}
+                </div>
+            </div>
+            
+            <hr class="post-hr">
+
+            <section class="post-content">
+                {{content}}
+            </section>
+
+            <hr class="over-hr">
+
+            <footer class="post-footer">
+
+                {{> share}}
+                
+                {{> comment}}
+
+            </footer>
+
+        {{/post}}
+
+    </article>
+
+</div>

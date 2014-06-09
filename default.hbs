@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>{{meta_title}}</title>
+
+    <!-- blog description -->
+    <meta name="description" content="{{meta_description}}" />
+    <meta name="keywords" content="" />
+
+    <!-- 搜索引擎抓取 -->
+    <meta name="robots"content="index,follow"/>
+
+    <meta name="HandheldFriendly" content="True" />
+
+    <!-- mobie -->
+    <meta name ="viewport"content ="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable"content="yes"/>
+
+    <!-- style & script -->
+    <link rel="shortcut icon" href="{{asset "images/favicon.ico"}}">
+    <link rel="stylesheet" href="{{asset "css/screen.css"}}">
+    <script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body class="{{body_class}}">
+
+    <header class="header clearfix">
+        <a href="/" id="logo">
+            <h1 class="title">{{@blog.title}}</h1>
+            <small class="subtitle">{{@blog.description}}</small>
+        </a>
+
+        {{> nav}}
+
+        <span class="icon-list nav-open">&#xe604;</span>
+
+    </header>
+
+    {{> nav}}
+
+
+    <div class="main typo">
+        {{! Everything else gets inserted here }}
+        {{{body}}}
+    </div>
+
+
+    <footer class="footer">
+        <ul class="footer-info clearfix">
+            <li class="footer-item">
+                {{> links}}
+            </li>
+            <li class="footer-item copyright">
+                <p>Publish with <a class="icon-ghost" href="https://ghost.org" target="_blank">Ghost</a></p>
+                <p>Theme by <a class="theme" href="https://github.com/imsobear/readability" target="_blank">readbility</a></p>
+                <p>Typesetting by <a href="https://github.com/sofish/typo.css" target="_blank">typo.css</a></p>
+            </li>
+        </ul>
+    </footer>
+
+    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
+
+</body>
+</html>

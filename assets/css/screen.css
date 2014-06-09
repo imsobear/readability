@@ -1,0 +1,190 @@
+@import '_typo.css';
+@import '_base.css';
+body {
+  font: 12px, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #fff url("http://blog-images.u.qiniudn.com/noise-f1-99be850299aaf3f1e91225fa7a97228c.gif") 0 0 repeat;
+}
+a {
+  color: #1abc9c;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+a:hover {
+  color: #888;
+  text-decoration: none;
+}
+.typo {
+  font-size: 16px;
+}
+.pagination {
+  text-align: center;
+}
+.header {
+  height: 80px;
+  line-height: 80px;
+  background: #fff;
+  padding: 0 10%;
+  z-index: 100;
+}
+#logo {
+  float: left;
+}
+#logo h1 {
+  display: inline;
+  margin-right: 20px;
+}
+#logo:hover {
+  text-decoration: none;
+}
+.nav {
+  float: right;
+  margin-top: 10px;
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+.nav .nav-item {
+  float: left;
+  margin-left: 20px;
+}
+.nav .nav-item a {
+  display: block;
+  padding: 0 5px;
+}
+.nav .nav-item .subscribe {
+  display: none;
+}
+.nav-open {
+  color: #1abc9c;
+}
+.nav-open:hover {
+  cusor: pointer;
+}
+.nav-open,
+.nav-mobile {
+  display: none;
+}
+.main {
+  margin: 50px 10%;
+  background: #fff;
+  border: 1px solid #eee;
+}
+.main .content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 80px 8%;
+}
+.footer {
+  background: #333;
+  color: #ddd;
+  padding: 40px 10%;
+}
+.footer .link-list {
+  padding-left: 30px;
+}
+.footer .link-title {
+  color: #ddd;
+}
+.footer .friend-link {
+  list-style: disc;
+}
+.footer .footer-item {
+  float: left;
+  margin-right: 20px;
+}
+.footer .copyright {
+  float: right;
+}
+.post-title {
+  margin-bottom: 20px;
+}
+.icon-tag {
+  margin-left: 5px;
+}
+.post-hr {
+  margin: 15px 0;
+}
+.one-post .post-title {
+  float: left;
+}
+.one-post .post-meta {
+  margin: 15px 0;
+  float: right;
+}
+.one-post .post-hr {
+  margin: 0 0 30px 0;
+}
+.one-post .share {
+  margin-bottom: 10px;
+}
+.one-post .share h4 {
+  display: inline-block;
+  margin-right: 5px;
+}
+.one-post .share [class^=icon] {
+  font-size: 28px;
+  margin-right: 15px;
+}
+.one-post .over-hr {
+  margin-top: 50px;
+  border-bottom-width: 4px;
+}
+.one-post .post-content img {
+  max-width: 100%;
+}
+@media (max-width: 660px) {
+  .subtitle {
+    display: none;
+  }
+  .footer {
+    padding: 30px 5%;
+  }
+  .header {
+    padding: 0 5%;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid #ddd;
+  }
+  #logo {
+    float: none;
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+  .nav-open {
+    font-size: 25px;
+    border: 1px solid #ddd;
+    padding: 9px;
+    line-height: 25px;
+    margin-top: 18px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+  }
+  .nav-mobile {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    background: #fff;
+    -webkit-transition: all 0.5s;
+    margin-top: -52px;
+  }
+  .nav-mobile .nav-item {
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    letter-spacing: 3px;
+  }
+  .nav-mobile-open {
+    margin-top: 0;
+  }
+  .main {
+    margin: 0;
+    border-top: 1px solid #ddd;
+  }
+  .main .content {
+    padding: 20px 6%;
+  }
+}

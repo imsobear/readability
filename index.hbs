@@ -1,0 +1,33 @@
+{{!< default}}
+
+<div class="content">
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+        <!-- 标题 -->
+        <header class="post-header">
+            <h2 class="post-title">
+                <a href="{{url}}">{{{title}}}</a>
+            </h2>
+        </header>
+        <!-- 摘要 -->
+        <section class="post-excerpt">
+            <p>{{excerpt characters="140"}}&hellip;</p>
+        </section>
+        <div class="post-footer">
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="YYYY-MM-DD"}}</time>
+                <span class="icon-tag">&#xe600;</span>
+                {{#foreach tags}}
+                    <a href="{{url}}">{{name}}</a>
+                {{/foreach}}
+            </span>
+        </div>
+    </article>
+
+    <hr class="post-hr" >
+
+    {{/foreach}}
+
+    {{pagination}}
+
+</div>
